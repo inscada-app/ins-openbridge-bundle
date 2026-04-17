@@ -1,0 +1,39 @@
+{
+  "name": "@inscada/openbridge-bundle",
+  "version": "1.0.1",
+  "description": "Pre-bundled OpenBridge web components for maritime/industrial SCADA — single JS + CSS, CDN-ready",
+  "type": "module",
+  "main": "dist/inscada-openbridge.min.js",
+  "module": "dist/inscada-openbridge.min.js",
+  "exports": {
+    ".": "./dist/inscada-openbridge.min.js",
+    "./openbridge.css": "./dist/openbridge.css"
+  },
+  "files": [
+    "dist/inscada-openbridge.min.js",
+    "dist/openbridge.css"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openbridge",
+    "web-components",
+    "scada",
+    "maritime",
+    "inscada",
+    "dashboard",
+    "iec-62288"
+  ],
+  "author": "inSCADA",
+  "license": "MIT",
+  "dependencies": {
+    "@oicl/openbridge-webcomponents": "latest"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "typescript": "^5.9.0"
+  }
+}
